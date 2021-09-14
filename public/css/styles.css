@@ -1,13 +1,16 @@
 body {
-  color: #333333;
+  color: #fff;
   font-family: arial;
   max-width: 650px;
   margin: 0 auto;
   padding: 0 16px;
-
+  /*background-color: red;*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  position: relative;
+  animation: change 10s ease-in-out infinite;
 }
 
 .main-content {
@@ -15,7 +18,7 @@ body {
 }
 
 footer {
-  color: #888888;
+  color: white;
   border-top: 1px solid #eeeeee;
   margin-top: 16px;
   padding: 16px 0;
@@ -32,7 +35,7 @@ h1 {
 }
 
 header a {
-  color: #888888;
+  color: white;
   margin-right: 16px;
   text-decoration: none;
 }
@@ -49,6 +52,7 @@ input {
 button {
   cursor: pointer;
   border: 1px solid #888888;
+  border-radius: 100px;
   background: #888888;
   color: white;
   padding: 8px;

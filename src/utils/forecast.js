@@ -15,11 +15,13 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        " It is currently " +
+        " The weather currently is " +
+          body.current.weather_descriptions[0] +
+          " and it is " +
           body.current.temperature +
-          " degress out. There is a " +
-          body.current.precip +
-          "precipitation level"
+          " degrees outside, while the humidity is " +
+          body.current.humidity +
+          "%"
       );
     }
   });
